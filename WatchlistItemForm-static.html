@@ -11,7 +11,7 @@
    <body>
       <div class = "container">
  		<nav class = "navbar navbar-expand-sm navbar-dark bg-secondary">
-            <a class = "navbar-brand" href = "#">Watchlist App</a>
+            <a class = "navbar-brand" href = "homepage-static.html">Watchlist App</a>
             <button class = "navbar-toggler" type = "button" data-toggle = "collapse" 
                data-target = "#navbarSupportedContent" 
                aria-controls = "navbarSupportedContent" aria-expanded = "false" 
@@ -23,38 +23,47 @@
             <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
                <ul class = "navbar-nav mr-auto">
                   <li class = "nav-item">
-                     <a class = "nav-link" href = "#">Home</a>
+                     <a class = "nav-link" href = "homepage-static.html">Home</a>
                   </li>
                   <li class = "nav-item">
-                     <a class = "nav-link" href = "#">Watchlist</a>
+                     <a class = "nav-link" href = "watchlist-static.html">Watchlist</a>
                   </li>
                   <li class = "nav-item active">
-                     <a class = "nav-link" href = "#">Add a movie</a>
+                     <a class = "nav-link" href = "WatchlistItemForm-static.html">Submit an item</a>
                   </li>
                </ul>
                
             </div>
       	</nav>         
          <form>
-            <h2 class = "mt-4">Add a movie</h2>
+            <h2 class = "mt-4">Submit an item</h2>
+            <hr/>
             <div class = "form-group row ">
-               <label for = "inputEmail3" class = "col-sm-2 col-form-label">First Name</label>
+               <label for = "title" class = "col-sm-2 col-form-label">Title</label>
                <div class = "col-sm-4">
-                  <input type = "text" class = "form-control" id = "inputEmail3" placeholder = "First Name">
+                  <input type = "text" class = "form-control" placeholder = "Mandatory">
                </div>
             </div>
             
             <div class = "form-group row ">
-               <label for = "inputPassword3" class = "col-sm-2 col-form-label mr-0">Last Name</label>
+               <label for = "rating" class = "col-sm-2 col-form-label mr-0">Rating</label>
                <div class = "col-sm-4">
-                  <input type = "text" class = "form-control" id = "inputPassword3" placeholder = "Last Name">
+                  <input type = "text" class = "form-control" placeholder = "5.0 < Number < 10.0">
+               </div>
+            </div>
+            
+            
+            <div class = "form-group row ">
+               <label for = "priority" class = "col-sm-2 col-form-label mr-0">Priority</label>
+               <div class = "col-sm-4">
+                  <input type = "text" class = "form-control" placeholder = "Low|Medium|High">
                </div>
             </div>
             
             <div class = "form-group row">
             	<label for = "comments" class = "col-sm-2 col-form-label">Comments</label>
             	<div class = "col-sm-4">
-               		<textarea class = "form-control" id = "exampleFormControlTextarea1" rows = "3" placeholder = "Commetns"></textarea>
+               		<textarea class = "form-control" rows = "3" placeholder = "Max. 50 chars"></textarea>
                </div>
             </div>
             
