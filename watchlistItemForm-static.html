@@ -1,0 +1,91 @@
+<html >
+   <head>
+      <meta charset = "utf-8">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
+      <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <title>Watchlist App</title>
+   </head>
+   <body>
+      <div class = "container">
+ 		<nav class = "navbar navbar-expand-sm navbar-dark bg-secondary">
+            <a class = "navbar-brand" href = "homepage-static.html">Watchlist App</a>
+            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" 
+               data-target = "#navbarSupportedContent" 
+               aria-controls = "navbarSupportedContent" aria-expanded = "false" 
+               aria-label = "Toggle navigation">
+               
+               <span class = "navbar-toggler-icon"></span>
+            </button>
+            
+            <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+               <ul class = "navbar-nav mr-auto">
+                  <li class = "nav-item">
+                     <a class = "nav-link" href = "homepage-static.html">Home</a>
+                  </li>
+                  <li class = "nav-item">
+                     <a class = "nav-link" href = "watchlist-static.html">Watchlist</a>
+                  </li>
+                  <li class = "nav-item active">
+                     <a class = "nav-link" href = "WatchlistItemForm-static.html">Submit an item</a>
+                  </li>
+               </ul>
+               
+            </div>
+      	</nav>         
+         <form action="#" method="post">
+            <h2 class = "mt-4">Submit an item</h2>
+            <hr/>
+            <div class = "form-group row ">
+               <label for = "title" class = "col-sm-2 col-form-label">Title</label>
+               <div class = "col-sm-4">
+                  <input type = "text" class = "form-control" placeholder = "Mandatory">
+               </div>
+               <div class="col-sm-4">
+        			<span class="text-danger"> </span>      
+      			</div>
+            </div>
+            
+            <div class = "form-group row ">
+               <label for = "rating" class = "col-sm-2 col-form-label mr-0">Rating</label>
+               <div class = "col-sm-4">
+                  <input type = "text" class = "form-control" placeholder = "5.0 < Number < 10.0">
+               </div>
+               <div class="col-sm-4">
+        			<span class="text-danger"> </span>      
+      			</div>
+            </div>
+               
+            <div class = "form-group row ">
+               <label for = "priority" class = "col-sm-2 col-form-label mr-0">Priority</label>
+               <div class = "col-sm-4">
+                  <input type = "text" class = "form-control" placeholder = "Low|Medium|High">
+               </div>
+               <div class="col-sm-4">
+        			<span class="text-danger"> </span>      
+      			</div>
+            </div>
+               
+            <div class = "form-group row">
+            	<label for = "comments" class = "col-sm-2 col-form-label">Comments</label>
+            	<div class = "col-sm-4">
+               		<textarea class = "form-control" rows = "3" placeholder = "Max. 50 chars"></textarea>
+               </div>
+               <div class="col-sm-4">
+        			<span class="text-danger"> </span>      
+      			</div>
+            </div>
+            
+            <div class = "form-group row">
+               <div class = "col-sm-10">
+                  <button type = "submit" class = "btn btn-primary">Submit</button>
+               </div>            
+            </div>
+            
+         </form>
+      </div>
+      
+      <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"> </script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" > </script>
+      <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" > </script> 
+   </body>
+</html>
